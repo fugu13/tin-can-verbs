@@ -1,0 +1,21 @@
+{
+  "author": "Russell Duhon <russell.duhon@saltbox.com> (http://www.saltbox.com)",
+  "name": "tin-can-verbs",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fugu13/tin-can-verbs.git"
+  },
+  "scripts": {
+    "test": "node test/basics.js"
+  },
+  "engines": {
+    "node": "~0.6.11"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "requirejs": "~2.1",
+    "vows": "~0.6.4"
+  },
+  "optionalDependencies": {}
+}
