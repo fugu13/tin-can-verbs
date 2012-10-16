@@ -1,5 +1,6 @@
 var list = [
-    'adlnet_experienced'
+    'adlnet_experienced',
+    'adlnet_attended'
 ];
 
 
