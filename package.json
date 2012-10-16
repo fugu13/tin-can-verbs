@@ -7,7 +7,7 @@
     "url": "git://github.com/fugu13/tin-can-verbs.git"
   },
   "scripts": {
-    "test": "node test/basics.js"
+    "test": "node tests.js"
   },
   "engines": {
     "node": "~0.6.11"
@@ -15,7 +15,8 @@
   "dependencies": {},
   "devDependencies": {
     "requirejs": "~2.1",
-    "vows": "~0.6.4"
+    "vows": "~0.6.4",
+    "amdefine": "~0.0.4"
   },
   "optionalDependencies": {}
 }
