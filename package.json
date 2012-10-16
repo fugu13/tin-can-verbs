@@ -15,7 +15,8 @@
   "dependencies": {},
   "devDependencies": {
     "requirejs": "~2.1",
-    "vows": "~0.6.4"
+    "vows": "~0.6.4",
+    "amdefine": "~0.0.4"
   },
   "optionalDependencies": {}
 }
