@@ -2,11 +2,11 @@ var vows = require('vows');
 var assert = require('assert');
 
 var fs = require('fs');
-var _ = require('../lib/underscore-min.js');
+var _ = require('./lib/underscore-min');
 var requirejs = require('requirejs');
 
 requirejs.config({
-    //nodeRequire: require,
+    nodeRequire: require,
     baseUrl: 'verbs'
 });
 
@@ -18,10 +18,7 @@ requirejs(['list.js'], function(verbs) {
 
             'include all files in the verbs directory': function(verbs) {
                 var files = fs.readdirSync('verbs');
-                var names = _.map(verbs.names, function(name) {
-                    return name + '.js';
-                });
-                var missing = _.difference(files, names);
+                var missing = _.difference(files, verbs.names);
                 assert.isEmpty(missing);
             },
             'do not have conflicting IDs': function(verbs) {
