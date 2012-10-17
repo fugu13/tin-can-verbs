@@ -13,12 +13,18 @@
  
 <body>
     <script type="text/html" id="verb-template">
-        <div>
+        <div rel="#{{hidden}}">
             <h3>{{uri}}</h3>
             <div>
                 {{description}}
             </div>
-        </div>        
+        </div>
+        <div id="{{hidden}}" class="overlay">
+            <h3>{{uri}}</h3>
+            <div>
+                {{description}}
+            </div>
+        </div>
     </script>
     <div id="container"></div>
 </body>
