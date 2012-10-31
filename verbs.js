@@ -9,19 +9,28 @@ requirejs.config({
 });
 
 
-require(["jquery", "lib/underscore-min.js", "list.js", 'http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js', "lib/domReady.js"], function($, _, verbs) {
+require([
+    "jquery",
+    "lib/underscore-min.js",
+    "list.js",
+    'http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js',
+    "lib/domReady.js"
+], function($, _, verbs) {
     _.templateSettings = {
         interpolate : /\{\{(.+?)\}\}/g,
         escape: /\{\{-(.+?)\}\}/g,
-        evaluate: /\{\{=(.+?)\}\}/g
+        evaluate: /\{=(.+?)=\}/g
     };
     var template = _.template($('#verb-template').html());
     var container = $('#container');
     $(function() {
         var counter = 0;
-        _.each(verbs.modules, function(verb) {
-            verb.hidden = 'hidden' + counter++;
-            $(template(verb)).appendTo(container);
+        _.chain(verbs.modules).sortBy('uri').each(function(verb) {
+            var defaults = {
+                hidden: 'hidden' + counter++,
+                deprecated: false
+            }
+            $(template($.extend(defaults, verb))).appendTo(container);
         });
         $("div[rel]").overlay();
     });
