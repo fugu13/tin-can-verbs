@@ -1,6 +1,17 @@
 var list = [
     'adlnet_experienced',
-    'adlnet_attended'
+    'adlnet_attended',
+    'adlnet_answered',
+    'adlnet_attempted',
+    'adlnet_completed',
+    'adlnet_created',
+    'adlnet_failed',
+    'adlnet_imported',
+    'adlnet_interacted',
+    'adlnet_passed',
+    'adlnet_shared',
+    'adlnet_voided',
+    'problemsolutions_goldstar'
 ];
 
 
