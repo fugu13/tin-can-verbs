@@ -33,3 +33,7 @@
     margin-bottom: 1em;
     padding: 1em;
 }
+
+.deprecated {
+    color: red;
+}
