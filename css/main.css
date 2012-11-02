@@ -1,12 +1,14 @@
 .overlay {
-    width: 50%;
+    width: 70%;
     display: none;
+    margin-left: -10%;
     z-index:10000;
     min-height: 200px;
     border:1px solid #666;
     -moz-box-shadow:0 0 90px 5px #000;
     -webkit-box-shadow: 0 0 90px #000;
     background-color: white;
+    padding: 2em;
 }
 
 .overlay .close {
@@ -22,4 +24,16 @@
 #container {
     width: 50%;
     margin-left: 25%;
+}
+
+.list {
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.deprecated {
+    color: red;
 }

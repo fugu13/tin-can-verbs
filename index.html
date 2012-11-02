@@ -13,13 +13,14 @@
  
 <body>
     <script type="text/html" id="verb-template">
-        <div rel="#{{hidden}}">
+        <div class='list{= if(deprecated) { =} deprecated{= } =}' rel="#{{hidden}}">
             <h3>{{uri}}</h3>
+            {= if(deprecated) { =}<h4>deprecated</h4>{= } =}
             <div>
                 {{description}}
             </div>
         </div>
-        <div id="{{hidden}}" class="overlay">
+        <div id="{{hidden}}" class="overlay{= if(deprecated) { =} deprecated{= } =}">
             <h3>{{uri}}</h3>
             <div>
                 {{description}}
