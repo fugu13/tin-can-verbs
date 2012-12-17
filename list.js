@@ -12,8 +12,8 @@ var list = [
     'adlnet_shared',
     'adlnet_voided',
     'problemsolutions_goldstar',
-	'adlnet_commented',
-	'adlnet_rated'
+	'questionmark_commented',
+	'questionmark_rated'
 ];
 
 
