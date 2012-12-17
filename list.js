@@ -11,7 +11,9 @@ var list = [
     'adlnet_passed',
     'adlnet_shared',
     'adlnet_voided',
-    'problemsolutions_goldstar'
+    'problemsolutions_goldstar',
+	'adlnet_commented',
+	'adlnet_rated'
 ];
 
 
