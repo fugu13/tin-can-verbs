@@ -11,7 +11,17 @@ var list = [
     'adlnet_passed',
     'adlnet_shared',
     'adlnet_voided',
-    'problemsolutions_goldstar'
+    'problemsolutions_goldstar',
+	'questionmark_commented',
+	'questionmark_rated',
+    'tincanapicouk_started',
+    'tincanapicouk_stopped',
+    'tincanapicouk_evaluated',
+    'tincanapicouk_enrolled_onto_learning_plan',
+    'tincanapicouk_planned_learning',
+    'tincanapicouk_cancelled_planned_learning',
+    'trainingjoynet_observed_to_evaluate',
+    'trainingjoynet_observed_to_learn'
 ];
 
 
