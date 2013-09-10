@@ -1,7 +1,7 @@
 Tin Can Verbs
 =============
 
-An open source index of Tin Can API/Experience API verb information. Browse the data at http://fugu13.github.com/tin-can-verbs/
+An open source index of Tin Can API/Experience API verb information. Browse the data at http://fugu13.github.io/tin-can-verbs/
 
 Contributions welcome. If you're looking to be a regular contributor, the suggested approach is to clone the
 repository here on github, check it out locally, add a verb file (don't forget to put it in the verb file list),
